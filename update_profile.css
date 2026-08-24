@@ -1,0 +1,326 @@
+/* =====================================================
+                       RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+                       BODY
+===================================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6fb;
+
+    color: #333333;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+                 PROFILE CONTAINER
+===================================================== */
+
+.profile_container {
+    width: 100%;
+
+    max-width: 850px;
+}
+
+
+/* =====================================================
+                 PROFILE FORM BOX
+===================================================== */
+
+.profile_form_box {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+                    PAGE TITLE
+===================================================== */
+
+.profile_form_box h1 {
+    color: #20245c;
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+}
+
+
+.description {
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+                    SECTION TITLE
+===================================================== */
+
+.section_title {
+    width: 100%;
+
+    color: #20245c;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding-bottom: 10px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* =====================================================
+                     FORM ROW
+===================================================== */
+
+.form_row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+                    FORM GROUP
+===================================================== */
+
+.form_group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form_group label {
+    color: #333333;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+                INPUT / SELECT / TEXTAREA
+===================================================== */
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+/* =====================================================
+                       FOCUS
+===================================================== */
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+    border-color: #20245c;
+
+    box-shadow: 0 0 0 2px rgba(32, 36, 92, 0.08);
+}
+
+
+/* =====================================================
+                    READ ONLY FIELDS
+===================================================== */
+
+.form_group input[readonly] {
+    background-color: #f1f2f6;
+
+    color: #777777;
+
+    cursor: not-allowed;
+}
+
+
+/* =====================================================
+                       ADDRESS
+===================================================== */
+
+.full_width {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+.form_group textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* =====================================================
+                    FORM BUTTONS
+===================================================== */
+
+.form_buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+                  UPDATE BUTTON
+===================================================== */
+
+.update_button {
+    padding: 11px 24px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.update_button:hover {
+    background-color: #171a4a;
+}
+
+
+/* =====================================================
+                   CANCEL BUTTON
+===================================================== */
+
+.cancel_button {
+    padding: 11px 24px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    background-color: #ffffff;
+
+    color: #555555;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.cancel_button:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* =====================================================
+                     RESPONSIVE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+
+    .profile_form_box {
+        padding: 25px 20px;
+    }
+
+
+    .form_row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form_buttons {
+        flex-direction: column;
+    }
+
+
+    .update_button,
+    .cancel_button {
+        width: 100%;
+    }
+
+}
