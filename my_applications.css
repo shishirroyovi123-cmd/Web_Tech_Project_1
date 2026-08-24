@@ -1,0 +1,463 @@
+/* =====================================================
+                       RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fb;
+    color: #333333;
+}
+
+
+/* =====================================================
+                       HEADER
+===================================================== */
+
+.top_header {
+    width: 100%;
+    height: 70px;
+
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+
+.logo {
+    width: 115px;
+
+    font-size: 26px;
+
+    font-weight: bold;
+}
+
+
+.system_title {
+    flex: 1;
+
+    font-size: 15px;
+}
+
+
+.student_info {
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+                    PAGE LAYOUT
+===================================================== */
+
+.page_layout {
+    width: 100%;
+
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+}
+
+
+/* =====================================================
+                       SIDEBAR
+===================================================== */
+
+.sidebar {
+    width: 235px;
+
+    min-width: 235px;
+
+    min-height: calc(100vh - 70px);
+
+    background-color: #ffffff;
+
+    border-right: 1px solid #dddddd;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.sidebar_heading {
+    padding: 22px 20px 15px;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+}
+
+
+.sidebar_menu {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.sidebar_item {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 0 20px;
+
+    background-color: #ffffff;
+
+    color: #222222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-left: 4px solid transparent;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.sidebar_item:hover {
+    background-color: #f0f1fa;
+
+    color: #20245c;
+
+    border-left-color: #20245c;
+}
+
+
+.sidebar_item.active {
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    border-left-color: #20245c;
+}
+
+
+.sidebar_bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 8px 0;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.sidebar_item.logout {
+    color: #b42318;
+}
+
+
+.sidebar_item.logout:hover {
+    background-color: #fff1f0;
+
+    color: #b42318;
+
+    border-left-color: #b42318;
+}
+
+
+/* =====================================================
+                    MAIN CONTENT
+===================================================== */
+
+.main_content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+                    PAGE HEADER
+===================================================== */
+
+.page_header {
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+.page_header h1 {
+    color: #20245c;
+
+    font-size: 26px;
+
+    margin-bottom: 8px;
+}
+
+
+.page_header p {
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+                    CONTENT BOX
+===================================================== */
+
+.content_box {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =====================================================
+                  SECTION HEADER
+===================================================== */
+
+.section_header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.section_header h2 {
+    color: #20245c;
+
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+
+.section_header p {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+               NEW APPLICATION BUTTON
+===================================================== */
+
+.new_application_button {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.new_application_button:hover {
+    background-color: #171a4a;
+}
+
+
+/* =====================================================
+                  APPLICATION TABLE
+===================================================== */
+
+.table_container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.application_table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 13px;
+
+    min-width: 850px;
+}
+
+
+.application_table th {
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    padding: 13px;
+
+    text-align: left;
+}
+
+
+.application_table td {
+    padding: 13px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #555555;
+}
+
+
+.application_table tbody tr:hover {
+    background-color: #fafbfe;
+}
+
+
+/* =====================================================
+                     EMPTY DATA
+===================================================== */
+
+.empty_data {
+    text-align: center;
+
+    padding: 35px !important;
+
+    color: #888888 !important;
+}
+
+
+/* =====================================================
+                       FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 20px 5px;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+                      RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 210px;
+
+        min-width: 210px;
+    }
+
+
+    .system_title {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .page_layout {
+        display: block;
+    }
+
+
+    .sidebar {
+        width: 100%;
+
+        min-width: 100%;
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #dddddd;
+    }
+
+
+    .sidebar_bottom {
+        margin-top: 10px;
+    }
+
+
+    .main_content {
+        padding: 20px;
+    }
+
+
+    .section_header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .footer {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+}
