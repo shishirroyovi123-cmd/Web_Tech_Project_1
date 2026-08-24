@@ -1,1 +1,1 @@
-# Web_Tech_Project_1
+Student Exchange Program Management System
