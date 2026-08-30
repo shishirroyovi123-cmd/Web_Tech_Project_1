@@ -1,0 +1,348 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.profile_container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================================
+   PROFILE FORM BOX
+========================================================= */
+
+.profile_form_box {
+    width: 100%;
+    max-width: 850px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.profile_form_box h1 {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #303760;
+}
+
+
+.description {
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+========================================================= */
+
+.error_message {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: red;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+========================================================= */
+
+.success_message {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: green;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section_title {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #303760;
+
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================================================
+   FORM ROW
+========================================================= */
+
+.form_row {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form_group {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.form_group label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form_group input {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    font-size: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    outline: none;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+========================================================= */
+
+.form_group input:focus {
+    border-color: #303760;
+}
+
+
+/* =========================================================
+   READONLY INPUT
+========================================================= */
+
+.form_group input[readonly] {
+    background: #eeeeee;
+
+    color: #555;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   BUTTON AREA
+========================================================= */
+
+.form_buttons {
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================================
+   COMMON BUTTON STYLE
+========================================================= */
+
+.update_button,
+.cancel_button,
+.back_button {
+    min-width: 150px;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+
+    line-height: normal;
+}
+
+
+/* =========================================================
+   UPDATE PROFILE BUTTON
+========================================================= */
+
+.update_button {
+    border: none;
+
+    background: #303760;
+
+    color: white;
+}
+
+
+.update_button:hover {
+    background: #252b4d;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+========================================================= */
+
+.cancel_button {
+    border: 1px solid #ccc;
+
+    background: white;
+
+    color: #333;
+}
+
+
+.cancel_button:hover {
+    background: #eeeeee;
+}
+
+
+/* =========================================================
+   BACK TO DASHBOARD BUTTON
+   SAME COLOR AS UPDATE PROFILE
+========================================================= */
+
+.back_button {
+    display: inline-block;
+
+    border: none;
+
+    background: #303760;
+
+    color: white;
+}
+
+
+.back_button:hover {
+    background: #252b4d;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    .profile_container {
+        padding: 20px 15px;
+    }
+
+
+    .profile_form_box {
+        padding: 25px 20px;
+    }
+
+
+    .form_row {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .form_buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .update_button,
+    .cancel_button,
+    .back_button {
+        width: 100%;
+    }
+
+}

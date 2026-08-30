@@ -1,0 +1,455 @@
+/* =====================================================
+                       RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fb;
+    color: #333333;
+}
+
+
+/* =====================================================
+                       HEADER
+===================================================== */
+
+.top_header {
+    width: 100%;
+    height: 70px;
+
+    background-color: #20245c;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+
+.logo {
+    width: 115px;
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.system_title {
+    flex: 1;
+
+    font-size: 15px;
+}
+
+
+.student_info {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+                    PAGE LAYOUT
+===================================================== */
+
+.page_layout {
+    width: 100%;
+
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+}
+
+
+/* =====================================================
+                       SIDEBAR
+===================================================== */
+
+.sidebar {
+    width: 235px;
+    min-width: 235px;
+
+    min-height: calc(100vh - 70px);
+
+    background-color: #ffffff;
+
+    border-right: 1px solid #dddddd;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =====================================================
+                  SIDEBAR HEADING
+===================================================== */
+
+.sidebar_heading {
+    width: 100%;
+
+    padding: 22px 20px 15px;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* =====================================================
+                    SIDEBAR MENU
+===================================================== */
+
+.sidebar_menu {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =====================================================
+                    SIDEBAR ITEM
+===================================================== */
+
+.sidebar_item {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 0 20px;
+
+    background-color: #ffffff;
+
+    color: #222222;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-left: 4px solid transparent;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* =====================================================
+                       HOVER
+===================================================== */
+
+.sidebar_item:hover {
+    background-color: #f0f1fa;
+
+    color: #20245c;
+
+    border-left-color: #20245c;
+}
+
+
+/* =====================================================
+                       ACTIVE
+===================================================== */
+
+.sidebar_item.active {
+    background-color: #20245c;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    border-left-color: #20245c;
+}
+
+
+.sidebar_item.active:hover {
+    background-color: #20245c;
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+                  SIDEBAR BOTTOM
+===================================================== */
+
+.sidebar_bottom {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding-top: 8px;
+
+    padding-bottom: 8px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+                       LOGOUT
+===================================================== */
+
+.sidebar_item.logout {
+    color: #b42318;
+}
+
+
+.sidebar_item.logout:hover {
+    background-color: #fff1f0;
+
+    color: #b42318;
+
+    border-left-color: #b42318;
+}
+
+
+/* =====================================================
+                    MAIN CONTENT
+===================================================== */
+
+.main_content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+                    WELCOME BOX
+===================================================== */
+
+.welcome_box {
+    width: 100%;
+
+    min-height: 110px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+.welcome_box h1 {
+    color: #20245c;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome_box p {
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+                   CONTENT BOX
+===================================================== */
+
+.content_box {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+.content_box h2 {
+    color: #20245c;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.content_box > p {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+                   FEATURE LIST
+===================================================== */
+
+.feature_list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =====================================================
+                   FEATURE ITEM
+===================================================== */
+
+.feature_item {
+    display: block;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: #fafbfe;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.feature_item:hover {
+    background-color: #f0f1fa;
+
+    border-color: #20245c;
+
+    transform: translateX(3px);
+}
+
+
+.feature_item h3 {
+    color: #20245c;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+
+.feature_item p {
+    color: #666666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+                       FOOTER
+===================================================== */
+
+.footer {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 20px 5px;
+
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+                      RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 210px;
+
+        min-width: 210px;
+    }
+
+
+    .system_title {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .page_layout {
+        display: block;
+    }
+
+
+    .sidebar {
+        width: 100%;
+
+        min-width: 100%;
+
+        min-height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #dddddd;
+    }
+
+
+    .sidebar_bottom {
+        margin-top: 10px;
+    }
+
+
+    .main_content {
+        padding: 20px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+}
