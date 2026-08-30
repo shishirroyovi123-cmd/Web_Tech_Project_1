@@ -1,0 +1,457 @@
+/* ================= BODY ================= */
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #f4f6fb;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+/* ================= CONTAINER ================= */
+
+.login-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+
+    width: 600px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    text-align: center;
+
+}
+
+
+
+.header h1 {
+
+    margin: 0;
+
+    color: #202568;
+
+    font-size: 36px;
+
+}
+
+
+
+.header p {
+
+    margin-top: 10px;
+
+    color: #666;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ================= LOGIN TITLE ================= */
+
+h2 {
+
+    text-align: center;
+
+    color: #202568;
+
+    font-size: 26px;
+
+    margin-top: 25px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+
+td {
+
+    padding: 8px 5px;
+
+}
+
+
+
+/* ================= LABEL ================= */
+
+td label {
+
+    font-weight: bold;
+
+    color: #111;
+
+}
+
+
+
+/* ================= TEXT INPUT ================= */
+
+input[type="text"],
+input[type="password"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+
+    border-color: #202568;
+
+}
+
+
+
+/* ================= REMEMBER ME ================= */
+
+.remember-me {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 8px;
+
+    margin-top: 5px;
+
+}
+
+
+
+/* Remember Me Checkbox */
+
+.remember-me input#remember {
+
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    width: 16px;
+
+    height: 16px;
+
+    min-width: 16px;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 2px solid #202568;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    position: relative;
+
+}
+
+
+
+.remember-me input#remember:checked {
+
+    background-color: #202568;
+
+}
+
+
+
+.remember-me input#remember:checked::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+
+    top: 1px;
+
+    width: 4px;
+
+    height: 8px;
+
+    border: solid white;
+
+    border-width: 0 2px 2px 0;
+
+    transform: rotate(45deg);
+
+}
+
+
+
+/* Remember Me Text */
+
+.remember-me label {
+
+    display: inline-block;
+
+    width: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    font-weight: bold;
+
+    color: #111;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ================= FORGOT PASSWORD ================= */
+
+.forgot-password {
+
+    text-align: right;
+
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.forgot-password a {
+
+    color: #202568;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+.forgot-password a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ================= BUTTON AREA ================= */
+
+.button-area {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 15px;
+
+}
+
+
+
+/* ================= BUTTONS ================= */
+
+.login-btn,
+.cancel-btn {
+
+    width: 150px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+
+/* Login */
+
+.login-btn {
+
+    background-color: #202568;
+
+}
+
+
+
+.login-btn:hover {
+
+    background-color: #171b54;
+
+}
+
+
+
+/* Cancel */
+
+.cancel-btn {
+
+    background-color: #bd1f2d;
+
+}
+
+
+
+.cancel-btn:hover {
+
+    background-color: #a71926;
+
+}
+
+
+
+/* ================= REGISTER ================= */
+
+.register-link {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #666;
+
+}
+
+
+
+.register-link a {
+
+    color: #202568;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+
+}
+
+
+
+.register-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ================= PHP ERROR ================= */
+
+.php-error {
+
+    color: red;
+
+    text-align: center;
+
+    margin: 10px 0;
+
+}
+
+
+
+/* ================= SUCCESS ================= */
+
+.success-message {
+
+    color: green;
+
+    text-align: center;
+
+    margin: 10px 0;
+
+}
+
+
+
+/* ================= JAVASCRIPT ERROR ================= */
+
+.js-error {
+
+    color: red;
+
+    text-align: center;
+
+    margin: 10px 0;
+
+    display: none;
+
+}
