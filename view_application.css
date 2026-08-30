@@ -1,0 +1,730 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+
+/* =========================================================
+   PAGE LAYOUT
+========================================================= */
+
+.page_layout {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #1f2937;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADING
+========================================================= */
+
+.sidebar_heading {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #374151;
+}
+
+
+/* =========================================================
+   SIDEBAR MENU
+========================================================= */
+
+.sidebar_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   SIDEBAR ITEM
+========================================================= */
+
+.sidebar_item {
+    display: block;
+
+    padding: 14px 25px;
+
+    color: #d1d5db;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.sidebar_item:hover {
+    background: #374151;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ACTIVE SIDEBAR ITEM
+========================================================= */
+
+.sidebar_item.active {
+    background: #2563eb;
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   SIDEBAR BOTTOM
+========================================================= */
+
+.sidebar_bottom {
+    margin-top: auto;
+
+    border-top: 1px solid #374151;
+
+    padding-top: 10px;
+}
+
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.sidebar_item.logout:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main_content {
+    flex: 1;
+
+    padding: 35px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.page_header {
+    background: #ffffff;
+
+    padding: 25px 30px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.page_header h1 {
+    font-size: 28px;
+    color: #1f2937;
+
+    margin-bottom: 8px;
+}
+
+
+.page_header p {
+    color: #6b7280;
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: capitalize;
+
+    white-space: nowrap;
+}
+
+
+/* Pending */
+
+.status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* Approved */
+
+.status.approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+/* Rejected */
+
+.status.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* Reviewed */
+
+.status.reviewed {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+
+/* =========================================================
+   DETAILS CARD
+========================================================= */
+
+.details_card {
+    background: #ffffff;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.details_card h2 {
+    color: #1f2937;
+
+    font-size: 21px;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+
+.details_grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   DETAIL ITEM
+========================================================= */
+
+.detail_item {
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    transition: 0.3s;
+}
+
+
+.detail_item:hover {
+    border-color: #2563eb;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   DETAIL LABEL
+========================================================= */
+
+.detail_label {
+    color: #6b7280;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DETAIL VALUE
+========================================================= */
+
+.detail_value {
+    color: #1f2937;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   DESCRIPTION BOX
+========================================================= */
+
+.description_box {
+    background: #f9fafb;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 6px;
+
+    padding: 20px;
+
+    margin-top: 25px;
+}
+
+
+.description_box h3 {
+    color: #1f2937;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+
+.description_box p {
+    color: #4b5563;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   STATEMENT BOX
+========================================================= */
+
+.statement_box {
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    color: #374151;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   DECLARATION
+========================================================= */
+
+.details_card > p {
+    background: #ecfdf5;
+
+    border-left: 4px solid #16a34a;
+
+    border-radius: 6px;
+
+    padding: 15px 18px;
+
+    color: #166534;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DOCUMENT LIST
+========================================================= */
+
+.document_list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================================================
+   DOCUMENT ITEM
+========================================================= */
+
+.document_item {
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.document_item strong {
+    display: block;
+
+    color: #1f2937;
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+
+.document_item p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    word-break: break-word;
+}
+
+
+.document_item > div:last-child {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   DOCUMENT STATUS
+========================================================= */
+
+.document_status {
+    background: #fef3c7;
+
+    color: #92400e;
+
+    padding: 6px 12px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   VIEW DOCUMENT BUTTON
+========================================================= */
+
+.view_document_btn {
+    display: inline-block;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 9px 16px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.view_document_btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+========================================================= */
+
+.action_buttons {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back_btn {
+    display: inline-block;
+
+    background: #6b7280;
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.back_btn:hover {
+    background: #4b5563;
+}
+
+
+/* =========================================================
+   EDIT BUTTON
+========================================================= */
+
+.edit_btn {
+    display: inline-block;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.edit_btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+
+    .main_content {
+        padding: 25px;
+    }
+
+
+    .details_grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    .page_layout {
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+
+    .sidebar_menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .sidebar_item {
+        flex: 1;
+
+        min-width: 150px;
+
+        text-align: center;
+    }
+
+
+    .sidebar_bottom {
+        margin-top: 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .sidebar_bottom .sidebar_item {
+        flex: 1;
+    }
+
+
+    .main_content {
+        padding: 15px;
+    }
+
+
+    .page_header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    .page_header h1 {
+        font-size: 23px;
+    }
+
+
+    .details_card {
+        padding: 20px;
+    }
+
+
+    .details_grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .document_item {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .document_item > div:last-child {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+    }
+
+
+    .action_buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .back_btn,
+    .edit_btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
